@@ -3,7 +3,7 @@ package model;
 import java.util.List;
 
 public class ResponseModel {
-    private List<Vacancy> items;
+    private List<Object> items;
     private Integer found;
     private Integer pages;
     private Integer per_page;
@@ -15,7 +15,7 @@ public class ResponseModel {
     public ResponseModel() {
     }
 
-    public ResponseModel(List<Vacancy> items, Integer found, Integer pages, Integer per_page, Integer page, Object clusters, Object arguments, Object alternate_url) {
+    public ResponseModel(List<Object> items, Integer found, Integer pages, Integer per_page, Integer page, Object clusters, Object arguments, Object alternate_url) {
         this.items = items;
         this.found = found;
         this.pages = pages;
@@ -26,11 +26,11 @@ public class ResponseModel {
         this.alternate_url = alternate_url;
     }
 
-    public List<Vacancy> getItems() {
+    public List<Object> getItems() {
         return items;
     }
 
-    public void setItems(List<Vacancy> items) {
+    public void setItems(List<Object> items) {
         this.items = items;
     }
 
